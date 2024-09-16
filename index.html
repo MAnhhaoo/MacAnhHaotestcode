@@ -1,0 +1,149 @@
+<!-- câu lệnh tạo ra một template hmtm nhanh sử dụng trong dự án: !  -->
+<!-- html đc cấu tạo bởi 2 cặp thẻ : cặp thẻ đóng mở ,thẻ khuyết  -->
+<!-- phiên bản đang use là phiên bản 5 -->
+<!-- thẻ head đóng vai trò chứa toàn bộ thông tin về trang web -->
+<!-- thẻ boddy đóng vai trò chứa nội dung của toàn bộ trang web -->
+<!-- lệnh comment phần ccode:ctrl+/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- thẻ title giúp hiển thị nội dung trang web trên tab của trình duyệt -->
+    <title>CyberSoft Cafe</title>
+</head>
+<body>
+   <!-- thẻ tiêu đề heading -->
+   <!-- sử dụng left right center -->
+
+   <h1 style="text-align:center; background-color: #F0A52B;color: white;" >CyberSofr Cafe</h1>
+   <!-- the liên kết -->
+   <!-- thẻ block là thẻ có chiều dài full 1 dòng trình duyệt -->
+   <!-- thẻ inline có chiều dài bằng nôij dung nó chứa -->
+   <!-- thuộc tính href giúp chuyển người dùng  chuyển hướng tới trang web muốn  -->
+   <!-- thuộc tính target nhận giá trị _bank giúp mở 1 tab mới khi chuyẻn hường người dùng -->
+   <a style="text-decoration: none;" href="https://www.facebook.com/?locale=vi_VN" target="_blank">Home</a>
+   <a href="https://walyacoffee.com/">Menu</a>
+   <a href="https://www.youtube.com/">Other</a>
+   <!-- a*5 se tao ra 5 the a -->
+   <!-- alt+shift+mũi tên đi xuống  -->
+   <!-- trong một trang web chỉ có 1 thẻ h1 -->
+   <!-- thẻ tiêu đề bao gồn 6 thẻ : h1,h2...h6 và giá trị chưx sẽ nhỏ dần -->
+   <!-- thẻ hr ,tạo đường viền  -->
+   <!-- thuộc tính width đều chỉnh chiều dài thẻ hr  -->
+   <!-- thuộc tính size điều chỉnh chiều cao -->
+   <!-- align giếp điều chỉnh vị trí thẻ hr -->
+   <hr width="50%" align="center"size="10px" style="background-color: #808080;">
+   <h2 style="text-align: center;color: #C6AA8E ;"> About our cofé </h2>
+   <p style="text-align: right;">
+   <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Obcaecati quae et provident magni quasi ab, </b>
+    <br> facere recusandae nesciunt odit illo, eum hic sapiente. Veritatis delectus cumque quibusdam ipsum,
+    <br> provident ea ab doloremque nobis rem eum deserunt harum 
+    <br> odio expedita rerum, repellendus iure perspiciatis. Ducimus repellendus totam accusantium,
+     <br> eveniet cumque dicta.
+   </p>
+   <hr width="50%" align="center"size="10px" style="background-color: #808080;">
+   <h2 style="text-align: center;color:#C6AA8E;"> Special Items</h2>
+   <h3>the coffee list 1</h3>
+   <!-- thẻ danh sahcs k thứ tự(ul) -->
+   <ul type="circle" style="color: blue;" >
+    <li> Black Coffee</li>
+    <!-- thuoc tinh type giup thay doi khoi nam truoc danh sach -->
+    <!-- đường dẫn tương đối sử dụng các ký hiệu ../ để đi ra 1 cấp thư mục,gọi tên thư mục để ddi vào bên trong nếu thư mục đó file đang đứng cùng cấp  -->
+    <li style="color: pink;">Pink coffee</li>
+    <li>Green</li>
+    </ul>
+    <!-- điều chỉnh hình thì khi điều chỉnh chỉ dùng chiều cao (height) hoặc width (chiều dài) -->
+    <img width="45%" src="./img/chilling-cafe-01.jpg" alt="ly bạc xĩu">
+    <img width="45%" src="./img/chilling-cafe-13.jpg" alt="ly cf">
+    <h3> The coffee list 2 </h3>
+    <!-- thuộc tính type giúp cấu hình lại kiểu hiển thị thứ tự -->
+    <!-- thuộc tính start giúp xác định số thứ tưj bắt đàu cho danh sách  -->
+    <!-- thuộc tính reversed giúp đảo ngược thứ tự đến từ tằng dần thành giảm dần -->
+    <ol type="I">
+        <li>Soft dely cup</li>
+        <li>coffee art</li>
+        <li>specility coffee</li>
+
+    <!-- </ol> ctrl+i để nhắc lại lệnh -->
+    <img src="./img/chilling-cafe-13.jpg" alt=" anh cf">
+    <hr width="50%" align="center"size="10px" style="background-color: #808080;">
+    
+    <!-- layout menu  -->
+    <div>
+        <h2 style="text-align: center;color: #C6AA8E ;"> Menu </h2>
+        <table border="2px" cellspacing="0" cellpadding="10px" align="center" width="50%" >
+            <!-- cellspacing giúp chỉnh khoangr cách của các cột và các dòng  nhan giá trị px-->
+            <!-- cellpadding giúp chỉnh khoảng cách giữa nội dung và đường viền ,nhạn giá trị px -->
+            <!--    border giupps chỉnh độ dày đường viền table,nhạn giá trị px -->
+            <thead style="background-color: #C4CDD6  ;">
+
+                <!-- th là đại diện cho cột tiêu đề  -->
+                <!-- colspan giups hớp nhất nhiều cột tạo thành một cột lớn ,nhạn giá trị là số cột hợp nhất -->
+                <!-- rowspan giups hớp nhất nhiều dòng vào tạo thành một dòng lớn nhận giá trị là số dòng hớpj nhất -->
+                <th colspan="2">name</th>   
+                <th>type</th>
+                <th>price</th>
+            </thead>
+            
+            <tbody>
+                <!-- dong 2  -->
+                <!-- td đại diện cho cột của bản  -->
+                <!-- tr đại diện cho từng dòng của bảng -->
+
+                <tr> 
+                    <td rowspan="4" style="background-image: url(./img/chilling-cafe-13.jpg);color: white;">traditional coffee</td>
+                    <td rowspan="2">vietnamese coffee pin</td>
+                    <td> hot </td>
+                    <td> 60k </td>
+                </tr>
+                <!-- dong 3 -->
+                <tr>
+                    <td>cold</td>
+                    <td>28k</td>
+                </tr>
+                <!-- dong 4 -->
+                <tr>
+                    <td rowspan="2">milk coffee</td>
+                    <td>hot</td>
+                    <td>28k</td>
+                </tr>
+                <!-- dong 5 -->
+                <tr>
+                    <td>cold</td>
+                    <td>54k</td>
+                </tr>
+                    <!-- dong 6 -->
+                    <tr>
+                        <td rowspan="3" style="background-image: url(./img/chilling-cafe-11.jpg);color: white;">expresso</td>
+                        <td>American coffee</td>
+                        <td rowspan="3">hot</td>
+                        <td>111k</td>
+                    </tr>
+                    <!-- dòng 7 -->
+                <tr>
+                    <td>machiato</td>
+                    <td rowspan="2">40k</td>
+                </tr>
+                <!-- dòng 8 -->
+                <tr>
+                    <td>capuchino</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<div>
+    <hr width="50%" align="center"size="10px" style="background-color: #808080;">
+    <h2 style="text-align: center;color:#C6AA8E;"> Talk to us</h2>
+    <!-- mailto: trong thẻ liên kếtgiups gửi mail đến người dùng -->
+    <!-- telto trong thẻ liên kết giúp gửi std đến người dùng -->
+        <p>
+        reach us via <b>Email:</b>
+        <a href="mailto: macanhhao0347683890@gmail.com">macanhhao0347683890@gmail.com</a>
+        or <b>hotline</b>
+        <a href="telto: 0347683890 ">0347683890</a>
+         . <b>thank you</b>
+        </p>
+</div>
+</body>
+</html>
